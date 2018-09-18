@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\CP software\\usabi\\multileagues\\app\\build\\intermediates\\res\\merged\\debug\\menu\\drawable_view.xml",
+        "source": "E:\\CP software\\usabi\\multileagues\\app\\src\\main\\res\\menu\\drawable_view.xml"
+    },
+    {
+        "merged": "E:\\CP software\\usabi\\multileagues\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "E:\\CP software\\usabi\\multileagues\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "E:\\CP software\\usabi\\multileagues\\app\\build\\intermediates\\res\\merged\\debug\\menu\\about_us.xml",
+        "source": "E:\\CP software\\usabi\\multileagues\\app\\src\\main\\res\\menu\\about_us.xml"
+    }
+]

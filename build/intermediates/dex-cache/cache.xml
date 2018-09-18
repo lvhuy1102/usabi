@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\CP software\usabi\multileagues\app\libs\chartboost.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="de51dabe7039f344f8b72b2e9c3b52ceb83f5b3f">
+        <dex dex="E:\CP software\usabi\multileagues\app\build\intermediates\transforms\dex\debug\folders\1000\2\chartboost_f5bfc3532cc83b55c2c12bb140146788c6bd710f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\CP software\usabi\multileagues\app\libs\jsoup-1.7.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="872693211fd68d1c4e116cf90021603207725e19">
+        <dex dex="E:\CP software\usabi\multileagues\app\build\intermediates\transforms\dex\debug\folders\1000\2\jsoup-1.7.2_296839f72abfd5c02fb06de454a9819119c4bbef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LeQuan\.android\build-cache\529b194f3b52703463a80856ce472db01ba50a53\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="E:\CP software\usabi\multileagues\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_048a64eed794f5785ff40e77d9a0a5011c03d37b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LeQuan\.android\build-cache\0da7dc0f4fe96e17159cd287458e82f7383fc789\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f2ca37b0a7630468ac647e51ae67fee898594cbc">
+        <dex dex="E:\CP software\usabi\multileagues\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9d5aa134600f3bf45264d53c1e6361991424bac9\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_item_contest">
+
+    <LinearLayout
+        android:id="@+id/lnlLayout"
+        android:layout_width="40dp"
+        android:layout_height="80dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgEvent"
+            android:layout_width="@dimen/span24"
+            android:layout_height="@dimen/span24"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/football" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="89'"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTimeTeam1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:maxLines="2"
+        android:text="Mohamad Salad of Livepool score a maganer goal with a header."
+        app:layout_constraintLeft_toRightOf="@+id/lnlLayout"
+        app:layout_constraintRight_toLeftOf="@+id/imglogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/txtTimeTeam1"
+        app:layout_constraintTop_toBottomOf="@+id/txtTimeTeam1"
+        tools:ignore="NotSibling" />
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:src="@drawable/logo_manutd"
+        app:layout_constraintBottom_toBottomOf="@+id/lnlLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lnlLayout" />
+
+
+</android.support.constraint.ConstraintLayout>

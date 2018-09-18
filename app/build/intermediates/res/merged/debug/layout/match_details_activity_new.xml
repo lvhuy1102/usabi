@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/anfield"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/gray_huy" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/circle_whire_shape"
+        app:layout_constraintBottom_toBottomOf="@+id/imgView"
+        app:layout_constraintLeft_toLeftOf="@+id/imgView"
+        app:layout_constraintRight_toLeftOf="@+id/txtScoreTeam1MatchDetail"
+        app:layout_constraintTop_toTopOf="@+id/imgView" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/circle_whire_shape"
+        app:layout_constraintBottom_toBottomOf="@+id/imgView"
+        app:layout_constraintLeft_toRightOf="@+id/txtScoreTeam2MatchDetail"
+        app:layout_constraintRight_toRightOf="@+id/imgView"
+        app:layout_constraintTop_toTopOf="@+id/imgView" />
+
+    <View
+        android:id="@+id/guiline"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStadiumMatchDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="Anfield"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@+id/imgView"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvVs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="- VS -"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgView"
+        app:layout_constraintLeft_toLeftOf="@+id/imgView"
+        app:layout_constraintRight_toRightOf="@+id/imgView"
+        app:layout_constraintTop_toTopOf="@+id/imgView" />
+
+    <TextView
+        android:id="@+id/txtScoreTeam1MatchDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/span32"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvVs"
+        app:layout_constraintRight_toLeftOf="@+id/tvVs"
+        app:layout_constraintTop_toTopOf="@+id/tvVs" />
+
+    <TextView
+        android:id="@+id/txtScoreTeam2MatchDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/span32"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvVs"
+        app:layout_constraintLeft_toRightOf="@+id/tvVs"
+        app:layout_constraintTop_toTopOf="@+id/tvVs" />
+
+    <TextView
+        android:id="@+id/tv_home_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(2)"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/txtScoreTeam1MatchDetail"
+        app:layout_constraintRight_toRightOf="@+id/txtScoreTeam1MatchDetail"
+        app:layout_constraintTop_toBottomOf="@+id/txtScoreTeam1MatchDetail" />
+
+    <TextView
+        android:id="@+id/tv_away_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(2)"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/txtScoreTeam2MatchDetail"
+        app:layout_constraintRight_toRightOf="@+id/txtScoreTeam2MatchDetail"
+        app:layout_constraintTop_toBottomOf="@+id/txtScoreTeam2MatchDetail" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19 Aug 2018"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_pen"
+        app:layout_constraintLeft_toLeftOf="@+id/tvVs"
+        app:layout_constraintRight_toRightOf="@+id/tvVs"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_pen" />
+
+    <TextView
+        android:id="@+id/txtTeam1MatchDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="LIVERPOOL"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/txtTeam2MatchDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="REAL MARID"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/view2"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tv_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FULL TIME"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvVs"
+        app:layout_constraintRight_toRightOf="@+id/tvVs"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_pen" />
+
+    <ProgressBar
+        android:progressDrawable="@drawable/custom_progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/animate_progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        app:layout_constraintBottom_toTopOf="@id/tabs"
+        app:layout_constraintLeft_toLeftOf="@id/view1"
+        app:layout_constraintRight_toRightOf="@id/view2"
+        app:layout_constraintTop_toBottomOf="@id/txtTeam1MatchDetail" />
+
+    <android.support.design.widget.TabLayout
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginRight="@dimen/_16dp"
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30dp"
+        android:background="@color/tranparent"
+        app:layout_constraintBottom_toBottomOf="@+id/imgView"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="1dp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_admob"
+        app:layout_constraintTop_toBottomOf="@+id/tabs"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/ll_admob"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_admob"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoTeam1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="14dp"
+        android:src="@drawable/logo_liverpool"
+        app:layout_constraintBottom_toBottomOf="@+id/view1"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+    <ImageView
+        android:id="@+id/logoTeam2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="14dp"
+        android:src="@drawable/logo_manutd"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintLeft_toLeftOf="@+id/view2"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+
+</android.support.constraint.ConstraintLayout>

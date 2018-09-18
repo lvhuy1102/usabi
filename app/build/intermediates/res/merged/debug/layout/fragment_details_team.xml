@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:text="TEAM NAME :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="COUNTRY :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="FOUNDED :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="TEAM FIELD :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="TEAM CAPACITY :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv4" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="TWITTER HANDLE"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv5" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_16dp"
+        android:text="LIVERPOOL FC"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv1" />
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENDLAND"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="@id/tvName"
+        app:layout_constraintTop_toTopOf="@id/tv2" />
+
+    <TextView
+        android:id="@+id/tvFounded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1982"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="@id/tvName"
+        app:layout_constraintTop_toTopOf="@id/tv3" />
+
+    <TextView
+        android:id="@+id/tvTeamField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anfield"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="@id/tvName"
+        app:layout_constraintTop_toTopOf="@id/tv4" />
+
+    <TextView
+        android:id="@+id/tvAmountSeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="53,000"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="@id/tvName"
+        app:layout_constraintTop_toTopOf="@id/tv5" />
+
+    <TextView
+        android:id="@+id/tvTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#FLC"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="@id/tvName"
+        app:layout_constraintTop_toTopOf="@id/tv6" />
+
+
+</android.support.constraint.ConstraintLayout>

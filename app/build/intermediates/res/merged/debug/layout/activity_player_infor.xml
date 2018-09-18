@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PlayerInforActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <ImageView
+        android:id="@+id/img_logoClub"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/_120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/span8"
+        android:text="Mohamad Sala"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/img_logoClub"
+        app:layout_constraintRight_toRightOf="@id/img_logoClub"
+        app:layout_constraintTop_toBottomOf="@id/img_logoClub" />
+
+    <ImageView
+        android:id="@+id/imgBell"
+        android:layout_width="@dimen/span24"
+        android:layout_height="@dimen/span24"
+        android:layout_marginTop="@dimen/span8"
+        android:src="@drawable/ic_bell_huy"
+        app:layout_constraintLeft_toLeftOf="@id/tvNameProfile"
+        app:layout_constraintRight_toRightOf="@id/tvNameProfile"
+        app:layout_constraintTop_toBottomOf="@id/tvNameProfile" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16dp"
+                android:text="TEAM :"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="POSITION :"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="COMMON NAME :"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="FIRST NAME :"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="LAST NAME :"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv4" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="NATIONALITY"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv5" />
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="BIRD DATE :"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv6" />
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="BIRD COUNTRY :"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv7" />
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="BIRD PLACE :"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv8" />
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="HEIGHT :"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv9" />
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="WEIGHT :"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv10" />
+
+            <TextView
+                android:id="@+id/tvNameTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16dp"
+                android:text="LIVERPOOL"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPositon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="LWF"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="@id/tvNameTeam"
+                app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+            <TextView
+                android:id="@+id/tvCommonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Mo Salad"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="@id/tvNameTeam"
+                app:layout_constraintTop_toBottomOf="@id/tvPositon" />
+
+            <TextView
+                android:id="@+id/tvFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Mohamad"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="@id/tvNameTeam"
+                app:layout_constraintTop_toBottomOf="@id/tvCommonName" />
+
+            <TextView
+                android:id="@+id/tvLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Salad"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="@id/tvNameTeam"
+                app:layout_constraintTop_toBottomOf="@id/tvFirstName" />
+
+            <TextView
+                android:id="@+id/tvNationality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="EGYPTAIN"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="@id/tvNameTeam"
+                app:layout_constraintTop_toBottomOf="@id/tvLastName" />
+
+            <TextView
+                android:id="@+id/tvBirdDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="24-10-1979"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="@id/tvNameTeam"
+                app:layout_constraintTop_toBottomOf="@id/tvNationality" />
+
+            <TextView
+                android:id="@+id/tvBirdCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Egypt"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="@id/tvNameTeam"
+                app:layout_constraintTop_toBottomOf="@id/tvBirdDate" />
+
+            <TextView
+                android:id="@+id/tvBirdPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cairo"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="@id/tvNameTeam"
+                app:layout_constraintTop_toBottomOf="@id/tv8" />
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="187 cm"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="@id/tvNameTeam"
+                app:layout_constraintTop_toBottomOf="@id/tv9" />
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="78 kg"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="@id/tvNameTeam"
+                app:layout_constraintTop_toBottomOf="@id/tv10" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

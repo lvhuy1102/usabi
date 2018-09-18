@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PurcharseMorePointsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/bg_item_contest"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/bg_item_contest"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/bg_item_contest"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="300 points"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/view1"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:text="$300"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/rBtn1"
+        app:layout_constraintRight_toLeftOf="@+id/rBtn1"
+        app:layout_constraintTop_toTopOf="@+id/rBtn1" />
+
+    <RadioButton
+        android:id="@+id/rBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view1"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="500 points"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintLeft_toLeftOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:text="$450"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/rBtn2"
+        app:layout_constraintRight_toLeftOf="@+id/rBtn2"
+        app:layout_constraintTop_toTopOf="@+id/rBtn2" />
+
+    <RadioButton
+        android:id="@+id/rBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="700 points"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:text="$600"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/rBtn3"
+        app:layout_constraintRight_toLeftOf="@+id/rBtn3"
+        app:layout_constraintTop_toTopOf="@+id/rBtn3" />
+
+    <RadioButton
+        android:id="@+id/rBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintRight_toRightOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <Button
+        android:id="@+id/btnPaypal"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/paypal"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/actionbar"
+            layout="@layout/layout_toolbar" />
+
+        <ImageView
+            android:id="@+id/imgWall"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actionbar" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/circle_bg_red"
+            app:layout_constraintBottom_toBottomOf="@+id/imgWall"
+            app:layout_constraintLeft_toLeftOf="@+id/imgWall"
+            app:layout_constraintRight_toRightOf="@+id/imgWall"
+            app:layout_constraintTop_toTopOf="@+id/imgWall" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="Register  an account"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/imgWall"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/img_camera"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgWall" />
+
+        <ImageView
+            android:id="@+id/ic_accout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/edtName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edtName" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:hint="User Name"
+            android:inputType="text"
+            app:layout_constraintLeft_toRightOf="@+id/ic_accout"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgAvatar" />
+
+        <ImageView
+            android:id="@+id/ic_phone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/edtPhone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edtPhone" />
+
+        <EditText
+            android:id="@+id/tvPhone"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:gravity="center"
+            android:text="+64"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/edtPhone"
+            app:layout_constraintLeft_toRightOf="@+id/ic_phone"
+            app:layout_constraintRight_toLeftOf="@+id/edtPhone"
+            app:layout_constraintTop_toTopOf="@+id/edtPhone" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:hint="Phone"
+            android:inputType="phone"
+            app:layout_constraintLeft_toRightOf="@+id/tvPhone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+        <ImageView
+            android:id="@+id/ic_pass"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/edtPass"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edtPass" />
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintLeft_toRightOf="@+id/ic_pass"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPhone" />
+
+        <ImageView
+            android:id="@+id/ic_repass"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/edtRePass"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edtRePass" />
+
+        <EditText
+            android:id="@+id/edtRePass"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:hint="Re-enter Password"
+            android:inputType="textPassword"
+            app:layout_constraintLeft_toRightOf="@+id/ic_repass"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPass" />
+
+        <ImageView
+            android:id="@+id/ic_code"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/edtCode"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edtCode" />
+
+        <EditText
+            android:id="@+id/edtCode"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:hint="Promotion Code"
+            android:inputType="text"
+            app:layout_constraintLeft_toRightOf="@+id/ic_code"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtRePass" />
+
+        <TextView
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_boder_button"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/edtCode" />
+
+        <TextView
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_boder_button"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/btnSignUp" />
+
+        <TextView
+            android:id="@+id/btnLoginWithGuess"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Continue as Guess"
+            android:textColor="@color/red"
+            app:layout_constraintTop_toBottomOf="@id/btnSignIn" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

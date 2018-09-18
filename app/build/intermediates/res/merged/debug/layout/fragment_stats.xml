@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNameTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:text="Liverpool"
+        android:textAllCaps="true"
+        android:textColor="@color/red"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNameTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:text="Liverpool"
+        android:textAllCaps="true"
+        android:textColor="@color/red"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guiline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="statistics"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/tvNameTeam1"
+        app:layout_constraintRight_toLeftOf="@+id/tvNameTeam2"
+        app:layout_constraintTop_toTopOf="@+id/tvNameTeam1" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameTeam1" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="goal"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="possesion"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="shots"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="shots on target"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="coner kicks"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="fouls commidted"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="yeallow card"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="red card"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv7" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="penalty"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv8" />
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="off side"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv9" />
+
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="saves"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv10" />
+
+    <TextView
+        android:id="@+id/tv12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/span8"
+        android:text="stadium"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@+id/guiline"
+        app:layout_constraintRight_toRightOf="@+id/guiline"
+        app:layout_constraintTop_toBottomOf="@+id/tv11" />
+
+    <TextView
+        android:id="@+id/tvGoalTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tvGoalTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tvPossesionTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="65%"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tvPossesionTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35%"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tvShot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/tvShot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/tvTargetTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv4" />
+
+    <TextView
+        android:id="@+id/tvTargetTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv4" />
+
+    <TextView
+        android:id="@+id/tvConerTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/tvConerTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/tvfoulTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv6" />
+
+    <TextView
+        android:id="@+id/tvfoulTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv6" />
+
+    <TextView
+        android:id="@+id/tvYeallowCardTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv7" />
+
+    <TextView
+        android:id="@+id/tvYeallowCardTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv7" />
+
+    <TextView
+        android:id="@+id/tvRedcardTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv8" />
+
+    <TextView
+        android:id="@+id/tvRedcardTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv8" />
+
+    <TextView
+        android:id="@+id/tvPenTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv9" />
+
+    <TextView
+        android:id="@+id/tvPenTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv9" />
+
+    <TextView
+        android:id="@+id/tvOffSideTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv10" />
+
+    <TextView
+        android:id="@+id/tvOffSideTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv10" />
+
+    <TextView
+        android:id="@+id/tvSavesTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv11" />
+
+    <TextView
+        android:id="@+id/tvSavesTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv11" />
+
+    <TextView
+        android:id="@+id/tvStadiumTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="49.544"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv12" />
+
+    <TextView
+        android:id="@+id/tvStadiumTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/tv12" />
+
+
+</android.support.constraint.ConstraintLayout>

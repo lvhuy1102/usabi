@@ -1,0 +1,173 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_item_match"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_item"
+    android:layout_marginLeft="@dimen/margin_layout"
+    android:layout_marginRight="@dimen/margin_layout"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/margin_small"
+    app:cardElevation="1dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/logo_premier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvLeague"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="ENDLISH PREMILEAGUE"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintLeft_toRightOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/lbl_date_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="To day 20/10/1999"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLeague"
+            tools:layout_editor_absoluteX="119dp" />
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:layout_width="14dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLeague"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvLeague" />
+
+        <ImageView
+            android:id="@+id/imgTeam1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo_liverpool"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tvTime"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <ImageView
+            android:id="@+id/imgTeam2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo_manutd"
+            app:layout_constraintLeft_toRightOf="@+id/tvTime"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:40 PM"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toRightOf="@+id/imgTeam1"
+            app:layout_constraintRight_toLeftOf="@+id/imgTeam2"
+            app:layout_constraintTop_toTopOf="@+id/imgTeam1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ICC"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lbl_home_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/tvTime"
+            app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="16dp"
+            app:layout_constraintLeft_toRightOf="@+id/lbl_home_score"
+            app:layout_constraintRight_toLeftOf="@+id/tvAwayScore"
+            app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+        <TextView
+            android:id="@+id/tvAwayScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="16dp"
+            app:layout_constraintRight_toRightOf="@+id/tvTime"
+            app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="END"
+            app:layout_constraintLeft_toLeftOf="@+id/tvTime"
+            app:layout_constraintRight_toRightOf="@+id/tvTime"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_home_score" />
+
+        <TextView
+            android:id="@+id/lbl_name_team1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="LIVERPOOL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/imgTeam1"
+            app:layout_constraintRight_toRightOf="@+id/imgTeam1"
+            app:layout_constraintTop_toBottomOf="@+id/imgTeam1" />
+
+        <TextView
+            android:id="@+id/lbl_name_team2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="MANU"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/imgTeam2"
+            app:layout_constraintRight_toRightOf="@+id/imgTeam2"
+            app:layout_constraintTop_toBottomOf="@+id/imgTeam2" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

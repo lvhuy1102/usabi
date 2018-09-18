@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <ImageView
+        android:id="@+id/img_logoClub"
+        android:layout_width="@dimen/_80dp"
+        android:layout_height="@dimen/_80dp"
+        android:src="@drawable/logo_liverpool"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/span4"
+        android:text="Liverpool FC"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/imgBell"
+        app:layout_constraintLeft_toLeftOf="@id/img_logoClub"
+        app:layout_constraintRight_toRightOf="@id/img_logoClub"
+        app:layout_constraintTop_toBottomOf="@id/img_logoClub" />
+
+    <ImageView
+        android:id="@+id/imgBell"
+        android:layout_width="@dimen/span24"
+        android:layout_height="@dimen/span24"
+        android:layout_marginBottom="@dimen/span4"
+        android:layout_marginTop="@dimen/span4"
+        android:src="@drawable/ic_bell"
+        app:layout_constraintBottom_toTopOf="@id/tabLayout"
+        app:layout_constraintLeft_toLeftOf="@id/tvName"
+        app:layout_constraintRight_toRightOf="@id/tvName" />
+
+    <android.support.design.widget.TabLayout
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="@id/view">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"></android.support.v4.view.ViewPager>
+
+</android.support.constraint.ConstraintLayout>
